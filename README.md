@@ -7,7 +7,7 @@ Requirements:
 - [Harvest API credentials](https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/)
 - OSX Sierra (maybe works on later versions?)
 
-![image of a popup that says 'your timesheet is out of date - age: 1 days](img/nag_example.png)
+![image of a popup that says 'your timesheet is out of date - age: 1 days](img/timesheet_nag_cast.gif)
 
 
 ## Usage
