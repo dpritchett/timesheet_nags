@@ -4,7 +4,7 @@ Goal: To remind you daily when your timesheet is out of date.
 
 Requirements: 
 
-- [Harvest API credentials](https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/)
+- [Harvest API credentials](https://id.getharvest.com/developers)
 - OSX Sierra (maybe works on later versions?)
 
 ![image of a popup that says 'your timesheet is out of date - age: 1 days](img/timesheet_nag_cast.gif)
