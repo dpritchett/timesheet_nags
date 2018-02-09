@@ -16,6 +16,20 @@ Requirements:
 * Run `timesheet_nags` to get a live check - it'll annoy you if you haven't updated your timesheet in over a day (and today's not Monday).
 
 
+### Scheduling
+
+I'm using a crontab.  Run `crontab -e` and then paste this in, save, and exit. Note that I used the full path to my executable, which in my case is in an `asdf` folder somewhere.
+
+```sh
+HARVEST_TOKEN='redacted'
+HARVEST_ACCOUNT_ID='redacted'
+
+# timesheet nags at 10 and 4
+0 10 * * * /Users/daniel/.asdf/shims/timesheet_nag >>/tmp/stdout.log 2>>/tmp/stderr.log
+0 16 * * * /Users/daniel/.asdf/shims/timesheet_nag >>/tmp/stdout.log 2>>/tmp/stderr.log
+```
+
+
 ## Future possibilities
 
 - More nag configuration
