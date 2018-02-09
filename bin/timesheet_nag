@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'timesheet_nags'
+
+nagger = TimesheetNags::Nagger.new
+
+nagger.check_and_nag
