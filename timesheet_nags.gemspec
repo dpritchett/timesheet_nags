@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Daniel J. Pritchett']
   spec.email         = ['dpritchett@gmail.com']
 
-  spec.summary       = 'TODO: Write a short summary, because Rubygems requires one.'
-  spec.description   = 'TODO: Write a longer description or delete this line.'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'Nag yourself via growl to update harvest timesheets. OSX only.'
+  spec.description   = 'Nag yourself via growl to update harvest timesheets. OSX only.'
+  spec.homepage      = 'https://github.com/dpritchett/timesheet_nags'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

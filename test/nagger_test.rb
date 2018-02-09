@@ -19,7 +19,7 @@ class NaggerTest < Minitest::Test
   end
 
   def test_it_sends_a_nag
-    #@nagger.send_nag
+    @nagger.send_nag
   end
 
   def test_it_checks_and_nags

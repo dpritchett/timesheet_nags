@@ -9,12 +9,13 @@ module TimesheetNags
       if should_nag?
         send_nag("Your timesheet is out of date 😭 Age: #{latest_timestamp_age} days.", is_good: false)
       else
-        send_nag("You rock at timesheets!")
+        send_nag('You rock at timesheets!')
       end
     end
 
     def should_nag?
-      latest_timestamp_age > 0
+      day_of_week = Date.today.to_time.wday
+      latest_timestamp_age > 0 && day_of_week > 1
     end
 
     def latest_timestamp_age
@@ -24,7 +25,7 @@ module TimesheetNags
       (Date.today - Date.parse(stamp)).to_i
     end
 
-    def send_nag(nag="Your timesheets are a mystery!", is_good: true)
+    def send_nag(nag = 'Your timesheets are a mystery!', is_good: true)
       if is_good
         args = "osascript -e 'display notification \" 💚 #{nag} 💚 \" with title \"Time Sheet Update\"'"
       else
