@@ -1,28 +1,28 @@
-# TimesheetNags
+# timesheet_nags
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/timesheet_nags`. To experiment with that code, run `bin/console` for an interactive prompt.
+Goal: To remind you daily when your timesheet is out of date.
 
-TODO: Delete this and the text above, and describe your gem
+Requirements: 
 
-## Installation
+- [Harvest API credentials](https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/)
+- OSX Sierra (maybe works on later versions?)
 
-Add this line to your application's Gemfile:
+![image of a popup that says 'your timesheet is out of date - age: 1 days](img/nag_example.png)
 
-```ruby
-gem 'timesheet_nags'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install timesheet_nags
 
 ## Usage
 
-TODO: Write usage instructions here
+* `gem install timesheet_nags`
+* Run `timesheet_nags` to get a live check - it'll annoy you if you haven't updated your timesheet in over a day (and today's not Monday).
+
+
+## Future possibilities
+
+- More nag configuration
+- Support backends other than Harvest and OSX growl
+
+
+TODO: Delete this and the text above, and describe your gem
 
 ## Development
 
@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/timesheet_nags. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dpritchett/timesheet_nags. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +40,4 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Code of Conduct
 
-Everyone interacting in the TimesheetNags project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/timesheet_nags/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the TimesheetNags project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/dpritchett/timesheet_nags/blob/master/CODE_OF_CONDUCT.md).
