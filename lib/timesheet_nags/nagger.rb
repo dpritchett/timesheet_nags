@@ -48,8 +48,12 @@ module TimesheetNags
       req['Authorization'] = 'Bearer ' + ENV.fetch('HARVEST_TOKEN')
       req['Harvest-Account-Id'] = ENV.fetch('HARVEST_ACCOUNT_ID')
 
+      begin
       @_res ||= Net::HTTP.start(uri.hostname, uri.port, use_ssl: true, timeout: 2) do |http|
         http.request(req)
+      end
+      rescue SocketError
+        abort "Unable to connect to Harvest!"
       end
 
       res = @_res
