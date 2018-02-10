@@ -9,13 +9,19 @@ module TimesheetNags
       if should_nag?
         send_nag("Your timesheet is out of date 😭 Age: #{latest_timestamp_age} days.", is_good: false)
       else
-        send_nag('You rock at timesheets!')
+        maybe_compliment 'You rock at timesheets!'
       end
     end
 
+    def maybe_compliment(message)
+      return unless rand(10).eql?(5)
+      send_nag message
+    end
+
     def should_nag?
+      tuesday_through_friday = [2,3,4,5]
       day_of_week = Date.today.to_time.wday
-      latest_timestamp_age > 0 && day_of_week > 1
+      latest_timestamp_age > 0 && tuesday_through_friday.include?(day_of_week)
     end
 
     def latest_timestamp_age
