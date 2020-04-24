@@ -1,11 +1,13 @@
 # timesheet_nags
+[![travisci status badge](https://travis-ci.org/dpritchett/timesheet_nags.svg?branch=master)](https://travis-ci.org/github/dpritchett/timesheet_nags)
 
 Goal: To remind you daily when your timesheet is out of date.
 
 Requirements: 
 
 - [Harvest API credentials](https://id.getharvest.com/developers)
-- OSX Sierra (maybe works on later versions?)
+- OSX Sierra and up
+- Ruby 2.2 - 2.7
 
 ![image of a popup that says 'your timesheet is out of date - age: 1 days](img/timesheet_nag_cast.gif)
 
