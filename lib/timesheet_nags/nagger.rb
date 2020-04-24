@@ -25,6 +25,7 @@ module TimesheetNags
     end
 
     def latest_timestamp_age
+      return 1000 if latest_timesheets.empty?
       sheet = latest_timesheets.first
       stamp = sheet.fetch('spent_date')
 
