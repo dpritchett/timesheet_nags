@@ -1,4 +1,5 @@
 # timesheet_nags
+[![Gem Version](https://badge.fury.io/rb/timesheet_nags.svg)](https://badge.fury.io/rb/timesheet_nags)
 [![travisci status badge](https://travis-ci.org/dpritchett/timesheet_nags.svg?branch=master)](https://travis-ci.org/github/dpritchett/timesheet_nags)
 
 Goal: To remind you daily when your timesheet is out of date.
